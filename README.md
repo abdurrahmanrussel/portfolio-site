@@ -1,23 +1,5 @@
-# React Portfolio - Md. Abdur Rahman
+# React Portfolio — Md. Abdur Rahman
 
-## Setup
+A responsive, animated portfolio website built with **React**, **TailwindCSS**, and **Framer Motion**.
 
-```bash
-npm install
-npm run dev
-```
 
-Build:
-
-```bash
-npm run build
-npm run preview
-```
-
-## Features
-
-* Dark / Light theme toggle
-* Smooth scrolling navigation
-* Responsive Tailwind CSS design
-* Framer Motion animations
-* Data‑driven components (easy to update)

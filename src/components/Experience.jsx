@@ -38,9 +38,7 @@ const Experience = () => (
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: i * 0.1 }}
           >
-            <span className="absolute -left-3.5 flex items-center justify-center w-7 h-7 bg-blue-600 rounded-full ring-4 ring-white dark:ring-gray-800 text-white text-sm">
-              {i + 1}
-            </span>
+            <span className="absolute -left-3.5 flex items-center justify-center w-4 h-4 bg-blue-600 rounded-full ring-4 ring-white dark:ring-gray-800" />
             <h4 className="text-xl font-bold text-blue-800 dark:text-blue-300">
               {exp.role} <span className="font-medium text-gray-700 dark:text-gray-400">@ {exp.company}</span>
             </h4>

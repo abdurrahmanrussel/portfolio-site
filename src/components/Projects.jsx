@@ -7,7 +7,7 @@ const Projects = () => (
     id="projects"
     className="py-24 bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-900 dark:to-gray-800"
   >
-    <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
       <motion.h3
         className="text-4xl font-extrabold mb-4 text-center bg-gradient-to-r from-blue-600 to-purple-600 text-transparent bg-clip-text"
         initial={{ opacity: 0, y: 20 }}
@@ -28,7 +28,7 @@ const Projects = () => (
         A collection of innovative projects showcasing my skills in building scalable, efficient, and creative software solutions.
       </motion.p>
 
-      <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {projects.map((project, i) => (
           <motion.a
             key={project.title}

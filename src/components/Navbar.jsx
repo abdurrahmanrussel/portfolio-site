@@ -8,8 +8,8 @@ const navLinks = [
   { id: 'projects', label: 'Projects' },
   { id: 'experience', label: 'Experience' },
   { id: 'education', label: 'Education' },
-  { id: 'supplementary-learning', label: 'Supplementary Learning' },
-  { id: 'competitive-programming', label: 'Competitive Programming' },
+  { id: 'supplementary-learning', label: 'Supplementary' },
+  { id: 'competitive-programming', label: 'Programming' },
   { id: 'achievements', label: 'Achievements' },
   { id: 'contact', label: 'Contact' },
 ];
@@ -22,12 +22,10 @@ const Navbar = () => {
   const [activeId, setActiveId] = useState('home');
   const [scrollLock, setScrollLock] = useState(false);
 
-  // Init dark mode
   useEffect(() => {
     setIsDark(document.documentElement.classList.contains('dark'));
   }, []);
 
-  // Scroll spy
   useEffect(() => {
     const observerOptions = {
       root: null,
@@ -36,7 +34,7 @@ const Navbar = () => {
     };
 
     const observer = new IntersectionObserver((entries) => {
-      if (scrollLock) return; // lock activeId temporarily
+      if (scrollLock) return;
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           setActiveId(entry.target.id);
@@ -65,7 +63,6 @@ const Navbar = () => {
     }
   };
 
-  // close mobile menu on large screens
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth >= 768) setOpen(false);
@@ -84,19 +81,22 @@ const Navbar = () => {
       el.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
 
-    setTimeout(() => setScrollLock(false), 800); // unlock after scroll
+    setTimeout(() => setScrollLock(false), 800);
   };
 
   return (
-    <header className="sticky top-0 z-50 bg-white/90 dark:bg-gray-900/90 backdrop-blur shadow transition-colors">
-      <nav className="max-w-7xl mx-auto flex justify-between items-center px-4 lg:px-8 py-4">
+    <header className="sticky top-0 z-50 bg-gradient-to-r from-blue-50/80 via-purple-50/80 to-pink-50/80 dark:from-gray-900/80 dark:via-gray-800/80 dark:to-gray-900/80 backdrop-blur shadow transition-colors">
+      <nav className="max-w-screen-2xl mx-auto flex justify-between items-center px-4 lg:px-8 py-4">
+        
         <a
-          href="#home"
-          className="font-bold text-xl text-blue-700 dark:text-blue-400 hover:text-blue-900 dark:hover:text-blue-300"
-          onClick={() => handleLinkClick('home')}
-        >
-          Md. Abdur Rahman
-        </a>
+  href="#home"
+  className="font-bold text-xl text-blue-700 dark:text-blue-400 hover:text-blue-900 dark:hover:text-blue-300 whitespace-nowrap truncate max-w-[12rem] sm:max-w-none"
+  onClick={() => handleLinkClick('home')}
+>
+  Md. Abdur Rahman
+</a>
+
+
 
         <div className="md:hidden flex items-center gap-2">
           <button
@@ -142,7 +142,7 @@ const Navbar = () => {
         </ul>
       </nav>
 
-      {/* mobile menu */}
+      {/* Mobile menu */}
       {open && (
         <ul className="md:hidden flex flex-col gap-4 px-6 pb-4 bg-white dark:bg-gray-900 shadow">
           {navLinks.map(({ id, label }) => (
