@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { FaGithub, FaLinkedin, FaCode } from 'react-icons/fa';
 import { TypeAnimation } from 'react-type-animation';
-import profile from '../assets/profile.jpg';
+import profile from '../assets/profile.png';
 
 const Hero = () => {
   return (
