@@ -21,7 +21,7 @@ export default function FloatingChatbot() {
   useEffect(() => {
     const timer = setTimeout(() => {
       if (!hasInteracted && !open) openChat(true);
-    }, 10000);
+    }, 5000);
     return () => clearTimeout(timer);
   }, [open, hasInteracted]);
 
