@@ -1,19 +1,19 @@
 export const skills = [
   {
     category: 'Programming Languages',
-    items: ['C++', 'C', 'Java', 'Python', 'JavaScript', 'Matlab', 'SQL'],
+    items: ['Python', 'C++', 'C', 'Java', 'JavaScript', 'SQL', 'Matlab'],
   },
   {
     category: 'Frameworks & Libraries',
-    items: ['Angular', 'ReactJS', 'Tailwind CSS', 'HTML', 'CSS', 'Bootstrap'],
+    items: ['React', 'Angular', 'Tailwind CSS', 'Bootstrap', 'HTML', 'CSS', 'Streamlit', 'FastAPI', 'Flask'],
   },
   {
     category: 'Backend & Dev Tools',
-    items: ['Firebase', 'Git', 'VS Code', 'JIRA'],
+    items: ['Firebase', 'Git', 'VS Code', 'JIRA', 'n8n', 'Make', 'Zapier', 'Excel', 'Google Sheets'],
   },
   {
     category: 'Data Science & ML',
-    items: ['Scikit-learn', 'TensorFlow', 'PyTorch', 'NumPy', 'Pandas'],
+    items: ['Scikit-learn', 'TensorFlow', 'PyTorch', 'NumPy', 'Pandas', 'RAG systems', 'LLaMA fine-tuning', 'NLP', 'Data Analysis', 'Visualization'],
   },
   {
     category: 'Databases',

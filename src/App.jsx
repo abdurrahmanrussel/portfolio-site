@@ -11,18 +11,32 @@ import Achievements from './components/Achievements';
 import SupplementaryLearning from './components/SupplementaryLearning';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import FloatingChatbot from './components/FloatingChatbot';
 
 function App() {
+  // Initialize theme on first load
   useEffect(() => {
-    if (localStorage.getItem('theme') === 'dark') {
-      document.documentElement.classList.add('dark');
+    const savedTheme = localStorage.getItem('theme');
+    const root = document.documentElement;
+
+    if (savedTheme === 'dark') {
+      root.classList.add('dark');
+    } else if (savedTheme === 'light') {
+      root.classList.remove('dark');
+    } else {
+      // Default theme: dark
+      localStorage.setItem('theme', 'dark');
+      root.classList.add('dark');
     }
   }, []);
 
   return (
-    <>
+    <div className="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-500">
+      {/* Navigation */}
       <Navbar />
-      <main className="px-4 md:px-8">
+
+      {/* Main Sections */}
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-24">
         <Hero />
         <About />
         <Skills />
@@ -34,8 +48,13 @@ function App() {
         <SupplementaryLearning />
         <Contact />
       </main>
+
+      {/* Footer */}
       <Footer />
-    </>
+
+      {/* Floating Chatbot Overlay */}
+      <FloatingChatbot />
+    </div>
   );
 }
 

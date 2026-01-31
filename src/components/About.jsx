@@ -59,11 +59,7 @@ const About = () => (
       viewport={{ once: true }}
       transition={{ duration: 0.7, delay: 0.2, ease: 'easeOut' }}
     >
-      I’m a passionate and driven{' '}
-      <span className="font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 transition-colors cursor-pointer">
-        Electrical and Computer Engineering
-      </span>{' '}
-      student at RUET, striving to bridge the gap between cutting-edge technology and impactful solutions.
+      I’m a passionate AI & Full-Stack Engineer with a B.Sc. in Electrical & Computer Engineering from RUET, bridging cutting-edge technology and impactful solutions.
     </motion.p>
 
     <motion.p
@@ -75,10 +71,13 @@ const About = () => (
     >
       Skilled in{' '}
       <span className="font-semibold text-purple-600 dark:text-purple-400 hover:text-purple-800 transition-colors cursor-pointer">
-        Python, C++, JavaScript
+        AI/ML, NLP, RAG systems, LLaMA fine-tuning, Python, data analysis & visualization
       </span>{' '}
-      and modern frameworks like React, Node.js & Django, I love building{' '}
-      <span className="italic">innovative software</span> that solves real-world problems. With a strong foundation in AI and Machine Learning, I aim to contribute to projects that make a difference and inspire others to do the same.
+      and full-stack development with{' '}
+      <span className="font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 transition-colors cursor-pointer">
+        React, Tailwind, Flask, FastAPI, Streamlit, n8n, Make, Zapier
+      </span>
+      , I love creating intelligent systems, automation workflows, and innovative software that solves real-world problems.
     </motion.p>
 
     <motion.p
@@ -88,7 +87,7 @@ const About = () => (
       viewport={{ once: true }}
       transition={{ duration: 0.7, delay: 0.6, ease: 'easeOut' }}
     >
-      I believe in continuous learning, teamwork, and the power of curiosity. Let’s innovate, collaborate, and create the future together!
+      I value continuous learning, collaboration, and curiosity. My goal is to build projects that make a difference and inspire others through AI and technology.
     </motion.p>
 
     {/* Call to Action Button */}

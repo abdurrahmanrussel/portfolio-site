@@ -8,6 +8,7 @@ const Experience = () => (
     className="py-24 bg-gradient-to-br from-purple-50 to-blue-50 dark:from-gray-900 dark:to-gray-800"
   >
     <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* Section Title */}
       <motion.h3
         className="text-4xl font-extrabold mb-4 text-center bg-gradient-to-r from-purple-600 to-blue-600 text-transparent bg-clip-text"
         initial={{ opacity: 0, y: 20 }}
@@ -18,6 +19,7 @@ const Experience = () => (
         Professional Experience
       </motion.h3>
 
+      {/* Section Subtitle */}
       <motion.p
         className="text-lg text-center text-gray-700 dark:text-gray-300 max-w-3xl mx-auto mb-14"
         initial={{ opacity: 0, y: 20 }}
@@ -28,24 +30,32 @@ const Experience = () => (
         Roles and projects where I honed my skills, collaborated with talented teams, and delivered impactful solutions.
       </motion.p>
 
+      {/* Experience Timeline */}
       <div className="relative border-l-2 border-blue-300 dark:border-blue-700 ml-4">
         {experiences.map((exp, i) => (
           <motion.div
-            key={exp.company}
+            key={exp.company + i}
             className="mb-10 ml-6"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: i * 0.1 }}
           >
+            {/* Timeline Dot */}
             <span className="absolute -left-3.5 flex items-center justify-center w-4 h-4 bg-blue-600 rounded-full ring-4 ring-white dark:ring-gray-800" />
+
+            {/* Role & Company */}
             <h4 className="text-xl font-bold text-blue-800 dark:text-blue-300">
               {exp.role} <span className="font-medium text-gray-700 dark:text-gray-400">@ {exp.company}</span>
             </h4>
+
+            {/* Period */}
             <span className="text-sm text-gray-500 dark:text-gray-400">{exp.period}</span>
+
+            {/* Points */}
             <ul className="list-disc ml-5 mt-2 space-y-1 text-gray-700 dark:text-gray-300">
-              {exp.points.map((p) => (
-                <li key={p}>{p}</li>
+              {exp.points.map((p, idx) => (
+                <li key={idx}>{p}</li>
               ))}
             </ul>
           </motion.div>
