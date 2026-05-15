@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { FaBrain, FaCode, FaLightbulb } from 'react-icons/fa';
 
@@ -57,9 +56,9 @@ const About = () => (
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      transition={{ duration: 0.7, delay: 0.2, ease: 'easeOut' }}
+      transition={{ duration: 0.7, delay: 0.2, ease: ‘easeOut’ }}
     >
-      I’m a passionate AI & Full-Stack Engineer with a B.Sc. in Electrical & Computer Engineering from RUET, bridging cutting-edge technology and impactful solutions.
+      I’m a Full-Stack SaaS developer and AI agent engineer with a B.Sc. in Electrical & Computer Engineering from RUET. I build and ship production systems — not just prototypes.
     </motion.p>
 
     <motion.p
@@ -67,17 +66,25 @@ const About = () => (
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      transition={{ duration: 0.7, delay: 0.4, ease: 'easeOut' }}
+      transition={{ duration: 0.7, delay: 0.4, ease: ‘easeOut’ }}
     >
-      Skilled in{' '}
-      <span className="font-semibold text-purple-600 dark:text-purple-400 hover:text-purple-800 transition-colors cursor-pointer">
-        AI/ML, NLP, RAG systems, LLaMA fine-tuning, Python, data analysis & visualization
-      </span>{' '}
-      and full-stack development with{' '}
-      <span className="font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 transition-colors cursor-pointer">
-        React, Tailwind, Flask, FastAPI, Streamlit, n8n, Make, Zapier
+      On the web side, I work with{‘ ‘}
+      <span className="font-semibold text-blue-600 dark:text-blue-400">
+        React, Next.js, Node.js, Express, Supabase, PostgreSQL, Stripe, and JWT
       </span>
-      , I love creating intelligent systems, automation workflows, and innovative software that solves real-world problems.
+      , deploying via{‘ ‘}
+      <span className="font-semibold text-blue-600 dark:text-blue-400">
+        GitHub Actions, Docker, AWS EC2, and Nginx
+      </span>
+      . On the AI side, I build agent systems with{‘ ‘}
+      <span className="font-semibold text-purple-600 dark:text-purple-400">
+        LangChain, LangGraph, Google ADK, A2A, MCP, Groq, and LLaMA
+      </span>
+      , and automate workflows with{‘ ‘}
+      <span className="font-semibold text-purple-600 dark:text-purple-400">
+        n8n, Playwright, and the Facebook Graph API
+      </span>
+      .
     </motion.p>
 
     <motion.p
@@ -85,9 +92,9 @@ const About = () => (
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      transition={{ duration: 0.7, delay: 0.6, ease: 'easeOut' }}
+      transition={{ duration: 0.7, delay: 0.6, ease: ‘easeOut’ }}
     >
-      I value continuous learning, collaboration, and curiosity. My goal is to build projects that make a difference and inspire others through AI and technology.
+      Available for freelance projects, long-term contracts, and remote positions. I can start immediately.
     </motion.p>
 
     {/* Call to Action Button */}

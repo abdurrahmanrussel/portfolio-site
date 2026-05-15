@@ -1,44 +1,24 @@
 export const experiences = [
   {
-    role: "AI & Automation & Data Analyst (Remote))",
-    company: "US-based Remote Company",
-    period: "2026 – Present",
+    role: "Full-Stack & AI/Automation Developer",
+    company: "Independent / Freelance",
+    period: "2024 – Present | Remote",
     points: [
-      "Designing and implementing AI-powered RAG pipelines and agentic AI assistants for clients.",
-      "Developing and deploying NLP models and LLaMA fine-tuning workflows.",
-      "Automating business workflows using n8n, Make, Zapier, and Python scripts.",
-      "Building dashboards for data analysis and visualization using Python, Streamlit, and Excel.",
+      "Built and deployed AA Trading (aatrading.us) — SaaS license platform with Stripe, Supabase, JWT auth, GitHub Actions CI/CD to AWS EC2.",
+      "Built KasbyIQ — TypeScript psychographic fit platform with Prisma, PostgreSQL, dual broker/agent dashboards, and scoring engine.",
+      "Deployed AI Currency Agent on AWS EC2 using Google ADK, A2A protocol, MCP tool calling, Groq LiteLLM, and FastAPI.",
+      "Engineered Facebook AI Automation — Groq LLaMA 3.3 70B Bangla NLP replies, 7 auto-posts/day, Messenger webhook; zero infrastructure cost.",
+      "Architected AI LinkedIn Content Engine — multi-agent n8n pipeline, 3 data sources, Slack approval gate, self-hosted on GCP.",
+      "Fine-tuned LLaMA-2 7B with QLoRA; built RAG pipeline with FAISS + 4-bit LLaMA-2 for PDF question answering.",
     ],
   },
   {
-    role: "Full-Stack Web Developer (Freelance)",
-    company: "Remote Clients",
-    period: "2024 – Present",
+    role: "Software Developer Intern",
+    company: "Monstarlab Bangladesh",
+    period: "Mar 2024 – Apr 2024 | Dhaka, Bangladesh",
     points: [
-      "Developed responsive web applications using React, Tailwind CSS, Flask, and FastAPI.",
-      "Integrated AI models and automation tools into web platforms.",
-      "Created data-driven applications connecting APIs, databases, and front-end interfaces.",
-      "Ensured optimized performance and user experience for client projects.",
-    ],
-  },
-  {
-    role: "AI Intern / Researcher",
-    company: "University Projects & Open-Source Contributions",
-    period: "2024 – 2025",
-    points: [
-      "Worked on LLaMA fine-tuning, NLP experiments, and AI model optimization.",
-      "Published research/code on GitHub and contributed to open-source AI projects.",
-      "Explored RAG systems and knowledge-based AI solutions for real-world applications.",
-    ],
-  },
-  {
-    role: "Data Analyst & Automation Specialist",
-    company: "Freelance / Project-Based",
-    period: "2024 – Present",
-    points: [
-      "Cleaned, analyzed, and visualized data for business and tech clients.",
-      "Built automated pipelines for data scraping, processing, and reporting.",
-      "Delivered insights and dashboards using Python, Google Sheets, and Excel.",
+      "Built and deployed Ed-Tech frontend with React and Tailwind CSS; CI/CD pipeline on Firebase Hosting.",
+      "Worked in an agile environment with JIRA, sprint cycles, and code reviews.",
     ],
   },
 ];

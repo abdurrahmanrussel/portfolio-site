@@ -1,5 +1,4 @@
-import React from 'react';
-import { FaEnvelope, FaPhoneAlt, FaLinkedin, FaGithub } from 'react-icons/fa';
+import { FaEnvelope, FaPhoneAlt, FaLinkedin, FaGithub, FaBriefcase } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 
 const contacts = [
@@ -26,6 +25,12 @@ const contacts = [
     label: 'GitHub',
     href: 'https://github.com/abdurrahmanrussel',
     display: 'GitHub',
+  },
+  {
+    icon: <FaBriefcase />,
+    label: 'Upwork',
+    href: 'https://www.upwork.com/freelancers/~01dfb26627e7c7a09a',
+    display: 'Upwork',
   },
 ];
 
