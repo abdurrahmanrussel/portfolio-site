@@ -56,9 +56,9 @@ const About = () => (
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      transition={{ duration: 0.7, delay: 0.2, ease: ‘easeOut’ }}
+      transition={{ duration: 0.7, delay: 0.2, ease: 'easeOut' }}
     >
-      I’m a Full-Stack SaaS developer and AI agent engineer with a B.Sc. in Electrical & Computer Engineering from RUET. I build and ship production systems — not just prototypes.
+      I'm a Full-Stack SaaS developer and AI agent engineer with a B.Sc. in Electrical & Computer Engineering from RUET. I build and ship production systems — not just prototypes.
     </motion.p>
 
     <motion.p
@@ -66,21 +66,21 @@ const About = () => (
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      transition={{ duration: 0.7, delay: 0.4, ease: ‘easeOut’ }}
+      transition={{ duration: 0.7, delay: 0.4, ease: 'easeOut' }}
     >
-      On the web side, I work with{‘ ‘}
+      On the web side, I work with{' '}
       <span className="font-semibold text-blue-600 dark:text-blue-400">
         React, Next.js, Node.js, Express, Supabase, PostgreSQL, Stripe, and JWT
       </span>
-      , deploying via{‘ ‘}
+      , deploying via{' '}
       <span className="font-semibold text-blue-600 dark:text-blue-400">
         GitHub Actions, Docker, AWS EC2, and Nginx
       </span>
-      . On the AI side, I build agent systems with{‘ ‘}
+      . On the AI side, I build agent systems with{' '}
       <span className="font-semibold text-purple-600 dark:text-purple-400">
         LangChain, LangGraph, Google ADK, A2A, MCP, Groq, and LLaMA
       </span>
-      , and automate workflows with{‘ ‘}
+      , and automate workflows with{' '}
       <span className="font-semibold text-purple-600 dark:text-purple-400">
         n8n, Playwright, and the Facebook Graph API
       </span>
@@ -92,7 +92,7 @@ const About = () => (
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      transition={{ duration: 0.7, delay: 0.6, ease: ‘easeOut’ }}
+      transition={{ duration: 0.7, delay: 0.6, ease: 'easeOut' }}
     >
       Available for freelance projects, long-term contracts, and remote positions. I can start immediately.
     </motion.p>
@@ -121,7 +121,7 @@ const About = () => (
       viewport={{ once: true }}
       transition={{ duration: 0.7, delay: 1 }}
     >
-      “The best way to predict the future is to invent it.” — Alan Kay
+      "The best way to predict the future is to invent it." — Alan Kay
     </motion.blockquote>
   </section>
 );
