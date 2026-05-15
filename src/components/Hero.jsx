@@ -88,13 +88,22 @@ const Hero = () => {
           </a>
         </div>
 
-        {/* CTA Button */}
-        <a
-          href="#projects"
-          className="inline-block px-8 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl shadow-lg hover:scale-105 hover:shadow-xl transition transform duration-300 text-lg font-semibold"
-        >
-          View My Projects
-        </a>
+        {/* CTA Buttons */}
+        <div className="flex flex-wrap justify-center lg:justify-start gap-4">
+          <a
+            href="#projects"
+            className="inline-block px-8 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl shadow-lg hover:scale-105 hover:shadow-xl transition transform duration-300 text-lg font-semibold"
+          >
+            View My Projects
+          </a>
+          <a
+            href="/Md._Abdur_Rahman_Resume.pdf"
+            download
+            className="inline-block px-8 py-3 border-2 border-blue-600 text-blue-600 dark:text-blue-400 dark:border-blue-400 rounded-xl shadow-lg hover:scale-105 hover:shadow-xl transition transform duration-300 text-lg font-semibold"
+          >
+            Download CV
+          </a>
+        </div>
       </motion.div>
     </section>
   );
