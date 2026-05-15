@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { FaGithub, FaLinkedin, FaCode } from 'react-icons/fa';
 import { TypeAnimation } from 'react-type-animation';
@@ -45,10 +44,10 @@ const Hero = () => {
         {/* Typewriter Dynamic Subtitle */}
         <TypeAnimation
           sequence={[
-            'AI/ML Engineer', 2000,
-            'NLP & RAG Specialist', 2000,
-            'Full-Stack Developer', 2000,
-            'Automation & Workflow Expert', 2000,
+            'Full-Stack SaaS Developer', 2000,
+            'AI Agent Engineer', 2000,
+            'LLM Integration Specialist', 2000,
+            'Automation & Workflow Builder', 2000,
           ]}
           wrapper="p"
           cursor={true}
@@ -57,8 +56,8 @@ const Hero = () => {
         />
 
         {/* Short Bio */}
-        <p className="text-lg md:text-xl lg:text-2xl text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
-          Passionate about building AI-powered solutions, automation workflows, and innovative software that delivers real impact.
+        <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
+          I build production SaaS platforms and AI agent systems — from Stripe-powered web apps to LLM pipelines with LangChain, Groq, and multi-agent protocols deployed on AWS.
         </p>
 
         {/* Social Links */}
@@ -94,7 +93,7 @@ const Hero = () => {
           href="#projects"
           className="inline-block px-8 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl shadow-lg hover:scale-105 hover:shadow-xl transition transform duration-300 text-lg font-semibold"
         >
-          🚀 View My Projects
+          View My Projects
         </a>
       </motion.div>
     </section>
