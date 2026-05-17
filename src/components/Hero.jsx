@@ -97,7 +97,7 @@ const Hero = () => {
             View My Projects
           </a>
           <a
-            href="/Md._Abdur_Rahman_Resume.pdf"
+            href="/Md-Abdur-Rahman-Resume.pdf"
             download
             className="inline-block px-8 py-3 border-2 border-blue-600 text-blue-600 dark:text-blue-400 dark:border-blue-400 rounded-xl shadow-lg hover:scale-105 hover:shadow-xl transition transform duration-300 text-lg font-semibold"
           >
