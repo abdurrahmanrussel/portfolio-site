@@ -41,7 +41,7 @@ export const projects = [
   {
     category: 'Web & SaaS',
     title: 'AA Trading — Automated Futures Trading Platform',
-    description: 'SaaS platform selling institutional-grade NinjaTrader 8 strategies and indicators. Stripe subscription and lifetime license checkout, 7-day free trial, multi-tenant license validation, JWT auth with refresh interceptor, email notifications, and admin dashboard for order and license management. Stripe webhooks handle payment events, trial expiry, and failed renewal flows in real time. Deployed on AWS EC2 (Ubuntu) behind Nginx reverse proxy with PM2 process management and GitHub Actions CI/CD.',
+    description: 'SaaS platform selling institutional-grade NinjaTrader 8 strategies and indicators. Stripe subscription and lifetime license checkout, 7-day free trial, multi-tenant license validation, JWT auth, email notifications, and admin dashboard. Stripe webhooks handle payment events and trial expiry in real time. Deployed on AWS EC2 behind Nginx with PM2 and GitHub Actions CI/CD.',
     tech: ['React', 'Vite', 'Node.js', 'Express', 'Supabase', 'PostgreSQL', 'Stripe', 'JWT', 'Nginx', 'PM2', 'AWS EC2', 'GitHub Actions'],
     link: 'https://aatrading.us',
     image: aatradingImg,
@@ -49,7 +49,7 @@ export const projects = [
   {
     category: 'Web & SaaS',
     title: 'KasbyIQ — Real Estate Psychographic SaaS',
-    description: 'B2B SaaS for real estate brokerages. Profiles agents across 6 behavioral dimensions — autonomy, competence, relatedness, grit, self-regulation, and EQ — to improve hiring and retention. Brokers see team-level insights; agents see coaching recommendations locked behind subscription. Stripe handles subscription billing and webhook-driven access control tied to plan status. Backend runs on AWS EC2 with PostgreSQL on AWS RDS, Prisma ORM, and SSL-secured Nginx — production-grade infrastructure built for US market.',
+    description: 'B2B SaaS for real estate brokerages. Psychologically profiles agents across 6 behavioral dimensions to improve hiring and retention. Brokers see team-level insights; agents see coaching recommendations locked behind subscription. Stripe handles billing and webhook-driven access control. Backend on AWS EC2, PostgreSQL on AWS RDS, Prisma ORM, SSL-secured Nginx.',
     tech: ['Next.js', 'TypeScript', 'PostgreSQL', 'AWS RDS', 'Prisma', 'NextAuth v5', 'Stripe', 'Tailwind CSS', 'Resend', 'AWS EC2', 'GitHub Actions'],
     link: 'http://54.159.236.60/',
     image: kasbyiqImg,
