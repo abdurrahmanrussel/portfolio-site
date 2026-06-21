@@ -1,3 +1,4 @@
+import primeseedImg from '../assets/primeseedbd.png';
 import aatradingImg from '../assets/aatrading.png';
 import kasbyiqImg from '../assets/kasbyIQ.png';
 import currencyAgentImg from '../assets/currency_agent.png';
@@ -28,6 +29,14 @@ import ragQaImg from '../assets/project_rag_qa.png';
 export const projects = [
 
   // ── Web & SaaS ──────────────────────────────────────────────────────────────
+  {
+    category: 'Web & SaaS',
+    title: 'Prime Seed BD — Bilingual E-Commerce Platform',
+    description: 'Production e-commerce storefront for a Bangladeshi seed retailer. Bilingual EN/বাংলা UI, product catalog with search and filtering, cart, COD + bKash/Nagad checkout, email-OTP auth, order tracking, and full admin dashboard. SEO/GEO-optimized with JSON-LD, hreflang, dynamic sitemap, and llms.txt.',
+    tech: ['Next.js 14', 'TypeScript', 'Tailwind CSS', 'Prisma', 'PostgreSQL', 'NextAuth v5', 'Zustand', 'next-intl', 'Docker', 'Cloudflare Tunnel', 'GitHub Actions'],
+    link: 'https://primeseedbd.com',
+    image: primeseedImg,
+  },
   {
     category: 'Web & SaaS',
     title: 'AA Trading — Software License Platform',
