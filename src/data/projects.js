@@ -1,4 +1,5 @@
 import primeseedImg from '../assets/primeseedbd.png';
+import pureOriginImg from '../assets/pure-origin-rajshahi.png';
 import aatradingImg from '../assets/aatrading.png';
 import kasbyiqImg from '../assets/kasbyIQ.png';
 import currencyAgentImg from '../assets/currency_agent.png';
@@ -39,19 +40,27 @@ export const projects = [
   },
   {
     category: 'Web & SaaS',
-    title: 'AA Trading — Software License Platform',
-    description: 'Production SaaS for software license sales. Stripe payments, Supabase PostgreSQL, JWT auth, GitHub Actions CI/CD to AWS EC2.',
-    tech: ['React', 'Node.js', 'Express', 'Stripe', 'Supabase', 'JWT', 'GitHub Actions', 'AWS EC2', 'Nginx', 'PM2'],
+    title: 'AA Trading — Automated Futures Trading Platform',
+    description: 'SaaS platform selling institutional-grade NinjaTrader 8 strategies and indicators. Stripe subscription and lifetime license checkout, 7-day free trial, multi-tenant license validation, JWT auth with refresh interceptor, email notifications, and admin dashboard for order and license management.',
+    tech: ['React', 'Vite', 'Node.js', 'Express', 'Supabase', 'PostgreSQL', 'Stripe', 'JWT', 'Nginx', 'PM2', 'AWS EC2', 'GitHub Actions'],
     link: 'https://aatrading.us',
     image: aatradingImg,
   },
   {
     category: 'Web & SaaS',
-    title: 'KasbyIQ — Real Estate Fit Platform',
-    description: 'Psychographic fit scoring platform matching real estate agents to brokerages across 6 behavioral dimensions. Dual dashboards, longitudinal surveys, automated coaching.',
-    tech: ['TypeScript', 'Prisma', 'PostgreSQL', 'Node.js', 'JWT'],
+    title: 'KasbyIQ — Real Estate Psychographic SaaS',
+    description: 'B2B SaaS for real estate brokerages. Profiles agents across 6 behavioral dimensions — autonomy, competence, relatedness, grit, self-regulation, and EQ — to improve hiring and retention. Brokers see team-level insights; agents see coaching recommendations locked behind subscription.',
+    tech: ['Next.js', 'TypeScript', 'PostgreSQL', 'AWS RDS', 'Prisma', 'NextAuth v5', 'Stripe', 'Tailwind CSS', 'Resend', 'AWS EC2', 'GitHub Actions'],
     link: 'http://54.159.236.60/',
     image: kasbyiqImg,
+  },
+  {
+    category: 'Web & SaaS',
+    title: 'Pure Origin Rajshahi — E-Commerce + FB AI Bot',
+    description: 'Farm-to-door mango and local produce storefront with a bilingual Bengali AI customer service bot. Bot polls Facebook post comments and Messenger every 15s, replies with conversation context using Groq LLaMA 3.3 70B, serves a fixed price catalogue to prevent hallucination, and handles payment claims. 27 daily auto-posts pulled from Google Sheets with Drive images — zero manual posting.',
+    tech: ['React', 'Vite', 'Tailwind CSS', 'Python', 'Flask', 'Groq API', 'LLaMA 3.3', 'Facebook Graph API', 'Google Sheets', 'Stripe', 'Vercel', 'Render'],
+    link: 'https://pure-origin-rajshahi.vercel.app/',
+    image: pureOriginImg,
   },
   {
     category: 'Web & SaaS',
